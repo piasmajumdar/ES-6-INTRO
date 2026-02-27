@@ -31,3 +31,10 @@ const person2 = {...person}; //Don't Refer the person
 person.salary = 36000; 
 console.log(person);
 console.log(person2);
+
+
+// rest of the entries can be accessed through ...(spread)
+let {x, y, ...z} = {x: 1, y:2, a:2, b:4, c:5};
+console.log(x);
+console.log(y);
+console.log(z);
